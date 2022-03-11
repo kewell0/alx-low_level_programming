@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-*main entry point
+*main - Entry point
 *
 *print task
 *Return: Always 0 (succes)
