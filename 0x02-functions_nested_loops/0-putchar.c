@@ -6,21 +6,6 @@
  * return: Always 0 (success)
  */
 
-int
-#include "main.h"
-
-
-
-/**
- *
- *  * main - Entry point
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
- *     */
-
 int main(void)
 
 {
