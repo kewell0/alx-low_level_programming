@@ -3,8 +3,7 @@
 /**
  * main - checks for uppercase
  *
- * Returns 1 if c is uppercase
- * Returns 0 otherwise
+ * Returns 1 if c is uppercase Returns 0 otherwise
  */
 
 int _isupper(int c)
@@ -13,4 +12,3 @@ int _isupper(int c)
 		return (1);
 	return (0);
 }
-
