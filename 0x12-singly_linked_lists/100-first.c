@@ -1,12 +1,14 @@
-#include <stdio.h>
+#include "lists.h"
+
+void __attribute__((constructor)) primary(void);
 
 /**
- * bmain - function executed before main
- * Return: no return.
+ * primary - print before the main function
+ * Return: void
  */
 
-void __attribute__((constructor)) bmain()
+void primary(void)
 {
-    printf("You're beat! and yet, you must allow");
-    printf(",\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\nI bore my house upon ");
+	printf("my back!\n");
 }
