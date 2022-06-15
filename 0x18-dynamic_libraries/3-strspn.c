@@ -1,25 +1,37 @@
 #include "main.h"
 
 /**
- * _strspn - gets lengthof a prefix substring
- * @s: string to check
- * @accept: string to check against
+ * _strspn - search a string for a set of bytes
+ * @s: char string array
+ * @accept: char array to check bytes with
  *
- * Return: number of bytes of s in accept
+ * Return: Number of bytes in the intial segment of `s`
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j;
+	int i;
+	int k;
+	int c;
 
-	for (i = 0; s[i]; i++)
+	i = 0;
+	c = 0;
+
+	while (s[i] != '\0')
 	{
-		for (j = 0; accept[j]; j++)
+		k = 0;
+		while (accept[k] != '\0')
 		{
-			if (s[i] == accept[j])
+			if (s[i] == accept[k])
+			{
+				c++;
 				break;
+			}
+			k++;
 		}
-		if (!accept[j])
+		if (accept[k] == '\0')
 			break;
+		i++;
 	}
-	return (i);
+	return (c);
 }
